@@ -1,0 +1,9 @@
+<div>
+  <app-user-form
+    *ngIf="user"
+    (save)="onEditUser($event)"
+    (cancel)="onCancel()"
+    [user]="user"
+    [title]="'Editar usuário'"
+  />
+</div>
